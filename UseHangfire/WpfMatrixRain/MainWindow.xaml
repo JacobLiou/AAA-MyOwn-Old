@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:WpfMatrixRain"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Canvas Background="Black"></Canvas>
+    <Grid Background="Black">
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Row="0" x:Name="canvas" Background="Black"></Canvas>
+        <Image Grid.Row="1" x:Name="image"></Image>
     </Grid>
 </Window>
