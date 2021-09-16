@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseHangfire", "UseHangfire\UseHangfire.csproj", "{F862FDCE-C7EC-493B-8E8D-A5116C880064}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseHangfire", "UseHangfire\UseHangfire.csproj", "{F862FDCE-C7EC-493B-8E8D-A5116C880064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseQuartz", "UseQuartz\UseQuartz.csproj", "{7A56871A-163C-4C7E-A9B5-184EC83B5D61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseQuartz", "UseQuartz\UseQuartz.csproj", "{7A56871A-163C-4C7E-A9B5-184EC83B5D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatirxRain", "MatirxRain\MatirxRain.csproj", "{D926C2E2-657C-4E16-BE3E-B9FB582DA655}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7A56871A-163C-4C7E-A9B5-184EC83B5D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A56871A-163C-4C7E-A9B5-184EC83B5D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A56871A-163C-4C7E-A9B5-184EC83B5D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D926C2E2-657C-4E16-BE3E-B9FB582DA655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D926C2E2-657C-4E16-BE3E-B9FB582DA655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D926C2E2-657C-4E16-BE3E-B9FB582DA655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D926C2E2-657C-4E16-BE3E-B9FB582DA655}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
