@@ -35,7 +35,7 @@ namespace WpfMatrixRain
         {
             InitializeComponent();
             dispatcherTimer = new DispatcherTimer();
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 1);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 200);
             dispatcherTimer.Tick += DispatcherTimer_Tick;
             dispatcherTimer.Start();
         }
