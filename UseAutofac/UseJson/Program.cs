@@ -13,6 +13,11 @@ using System.IO;
 
 namespace UseJson
 {
+    /// <summary>
+    /// Json
+    /// JSON存储 --- Mongo ES
+    /// Json作为配置 vs XML作为配置
+    /// </summary>
     public class Program
     {
         class Person
