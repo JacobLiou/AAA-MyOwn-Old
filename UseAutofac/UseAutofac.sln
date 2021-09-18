@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseWordCloud", "UseWordClou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benchmark.csproj", "{A1221B8E-A279-42F2-8DD6-83E5DB8884F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseSerilog", "Serilog\UseSerilog.csproj", "{A7CC42EA-EB9C-48F3-B7BE-C785D0C6C898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseSerilog", "Serilog\UseSerilog.csproj", "{A7CC42EA-EB9C-48F3-B7BE-C785D0C6C898}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseNLog", "NLog\UseNLog.csproj", "{736D0EAB-AD42-4A6B-999E-24B300E0ABEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseNLog", "NLog\UseNLog.csproj", "{736D0EAB-AD42-4A6B-999E-24B300E0ABEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseLog4Net", "Log4Net\UseLog4Net.csproj", "{0D6E0398-9F0F-4F85-89DD-9EC3A5CFE6BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseLog4Net", "Log4Net\UseLog4Net.csproj", "{0D6E0398-9F0F-4F85-89DD-9EC3A5CFE6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseJson", "UseJson\UseJson.csproj", "{DF5715BB-2E3D-4704-81C7-8D09347A9998}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0D6E0398-9F0F-4F85-89DD-9EC3A5CFE6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D6E0398-9F0F-4F85-89DD-9EC3A5CFE6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D6E0398-9F0F-4F85-89DD-9EC3A5CFE6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5715BB-2E3D-4704-81C7-8D09347A9998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5715BB-2E3D-4704-81C7-8D09347A9998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5715BB-2E3D-4704-81C7-8D09347A9998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5715BB-2E3D-4704-81C7-8D09347A9998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
