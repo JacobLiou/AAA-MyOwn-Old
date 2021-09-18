@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
+using System.Dynamic;
 
 namespace UseJson
 {
@@ -30,9 +31,19 @@ namespace UseJson
             public string MyProperty { get; set; }
         }
 
+        public class ExampleClass
+        {
+            public string String1 { get; set; }
+            public string String2 { get; set; }
+            public string String3 { get; set; }
+
+        }
         public static async Task Main(string[] args)
         {
-
+            String str = "{\"Id\":\"123\",\"DateOfRegistration\":\"2012-10-21T00:00:00+05:30\",\"Status\":0}";
+            string json = "{\"String1\": 1, \"String2\": true, \"String3\": false }";
+            string str1 = "{'Id':'123','DateOfRegistration':'2012 - 10 - 21T00: 00:00 + 05:30','Status':0}".Replace("'", "\"");
+            //string json1 = @"{ "String1": 1,"String2": true,"String3": false}";
             //The System.Text.Json types are thread-safe, including:
             //JsonSerializer
             //Utf8JsonReader
@@ -40,7 +51,37 @@ namespace UseJson
             //JsonDocument
             Person person = new Person { Name = "Hello", Age = 123, MyProperty = "adfljflsad" };
 
-            var str = JsonSerializer.Serialize(person, new JsonSerializerOptions(JsonSerializerDefaults.General));
+
+            /////C#动态语言部分 类比Python JS
+            //dynamic contact = new ExpandoObject
+            //{
+            //    Name = "Patrick Hines",
+            //    Phone = "206-555-0144",
+            //    Address = new ExpandoObject
+            //    {
+            //        Street = "123 Main St",
+            //        City = "Mercer Island",
+            //        State = "WA",
+            //        Postal = "68402"
+            //    }
+            //};
+
+            dynamic contact = new ExpandoObject();
+            contact.Name = "Patrick Hines";
+            contact.Phone = "206-555-0144";
+            contact.Address = new ExpandoObject();
+            contact.Address.Street = "123 Main St";
+            contact.Address.City = "Mercer Island";
+            contact.Address.State = "WA";
+            contact.Address.Postal = "68402";
+
+            //Serialize to get Json string using NewtonSoft.JSON
+            string Json = JsonSerializer.Serialize(contact, new JsonSerializerOptions { WriteIndented = true});
+
+            File.WriteAllTextAsync(Path.Combine(AppContext.BaseDirectory, "contact.json"), Json);
+
+
+            var str2 = JsonSerializer.Serialize(person, new JsonSerializerOptions(JsonSerializerDefaults.General));
             await File.WriteAllTextAsync(Path.Combine(AppContext.BaseDirectory, "person.json"), str);
 
             using var stream = new FileStream(Path.Combine(AppContext.BaseDirectory, "person.json"), FileMode.Open, FileAccess.Read);
