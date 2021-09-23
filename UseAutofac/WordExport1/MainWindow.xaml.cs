@@ -17,6 +17,13 @@ using System.Windows.Shapes;
 
 namespace WordExport1
 {
+    ///
+    /// https://docs.microsoft.com/en-us/previous-versions/office/troubleshoot/office-developer/automate-word-create-file-using-visual-c
+    /// 官方教授怎么进行Office互操作  数据导入导出
+    ///
+
+
+
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
