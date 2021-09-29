@@ -15,13 +15,16 @@ namespace UseCastleCore
             var fac = new DictionaryAdapterFactory();
             var ada = fac.GetAdapter<IHelloWorld>(dic);
             dic["Message"] = "Hello World";
+            dic["SayHello"] = "SayHello World";
             dic[1] = 2;
             Debug.Assert(ada.Message == "Hello world!");
         }
     }
 
-    interface IHelloWorld
+    public interface IHelloWorld
     {
         string Message { get; }
+
+        void SayHello();
     }
 }
