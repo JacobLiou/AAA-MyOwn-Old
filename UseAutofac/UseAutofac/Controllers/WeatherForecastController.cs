@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapr.Client;
 
 namespace UseAutofac.Controllers
 {
@@ -18,14 +19,19 @@ namespace UseAutofac.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly DaprClient _daprClient;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,DaprClient daprClient)
         {
             _logger = logger;
+            _daprClient = daprClient;
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            Dictionary<string, string> secrets = _daprClient.GetSecretAsync("secrets01", "RabbitMQConnectStr").Result;
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

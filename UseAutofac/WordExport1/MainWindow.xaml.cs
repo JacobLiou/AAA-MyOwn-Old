@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO.IsolatedStorage;
 
 namespace WordExport1
 {
@@ -36,6 +37,33 @@ namespace WordExport1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            //使用IsolatedStorage
+            //https://docs.microsoft.com/en-us/dotnet/standard/io/isolated-storage 适用场景
+            var isoStore = IsolatedStorageFile.GetUserStoreForAssembly();
+            if(isoStore.FileExists("serects.txt"))
+            {
+                //文件已经存在
+                using (var isoStream = new IsolatedStorageFileStream("serects.txt", FileMode.Open, isoStore))
+                {
+                    using(var isoReader = new StreamReader(isoStream))
+                    {
+                        var text = isoReader.ReadToEnd();
+                    }
+                }
+                    
+            }
+            else
+            {
+                using (var isoStream = new IsolatedStorageFileStream("serects.txt", FileMode.CreateNew, isoStore))
+                {
+                    using(var isoWriter = new StreamWriter(isoStream))
+                    {
+                        isoWriter.WriteLine("sercts: attentions");
+                    }
+                }
+            }
+
             try
             {
                 string wordTemplatePath = System.Windows.Forms.Application.StartupPath + @"\Word模板.docx";
