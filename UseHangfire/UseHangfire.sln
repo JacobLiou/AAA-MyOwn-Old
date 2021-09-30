@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatirxRain", "MatirxRain\Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMatrixRain", "WpfMatrixRain\WpfMatrixRain.csproj", "{9A8CD758-3753-4035-AA7A-D4B17A60196F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCastleCore", "UseCastleCore\UseCastleCore.csproj", "{B3615C0B-1240-4ED4-BBF1-2C9C54A676DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCastleCore", "UseCastleCore\UseCastleCore.csproj", "{B3615C0B-1240-4ED4-BBF1-2C9C54A676DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockTest", "MockTest\MockTest.csproj", "{0056E486-9337-4E3F-9011-B5CC593F7AC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B3615C0B-1240-4ED4-BBF1-2C9C54A676DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3615C0B-1240-4ED4-BBF1-2C9C54A676DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3615C0B-1240-4ED4-BBF1-2C9C54A676DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
