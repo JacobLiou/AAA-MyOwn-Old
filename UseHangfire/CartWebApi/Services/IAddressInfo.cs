@@ -5,6 +5,13 @@ using System.Threading.Tasks;
 
 namespace CartWebApi.Services
 {
+    public interface CartItem
+    {
+        public string ProductId { get; set; }
+        public int Quantity { get; set; }
+        public double Price { get; set; }
+    }
+
     public interface IAddressInfo
     {
         public string Street { get; set; }

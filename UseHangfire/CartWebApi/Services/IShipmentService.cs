@@ -8,6 +8,6 @@ namespace CartWebApi.Services
 {
     public interface IShipmentService
     {
-        void Ship(IAddressInfo addressInfo, IEnumerable<CartItem>);
+        void Ship(IAddressInfo addressInfo, IEnumerable<CartItem> items);
     }
 }
