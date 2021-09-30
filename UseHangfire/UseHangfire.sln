@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCastleCore", "UseCastleC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockTest", "MockTest\MockTest.csproj", "{0056E486-9337-4E3F-9011-B5CC593F7AC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NunitMock", "NunitMock\NunitMock.csproj", "{52A1E0D6-78DF-4385-AC11-762B5049AA41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartWebApi", "CartWebApi\CartWebApi.csproj", "{B278F9BD-C530-4074-BD04-A184442B9019}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0056E486-9337-4E3F-9011-B5CC593F7AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A1E0D6-78DF-4385-AC11-762B5049AA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A1E0D6-78DF-4385-AC11-762B5049AA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A1E0D6-78DF-4385-AC11-762B5049AA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A1E0D6-78DF-4385-AC11-762B5049AA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B278F9BD-C530-4074-BD04-A184442B9019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B278F9BD-C530-4074-BD04-A184442B9019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B278F9BD-C530-4074-BD04-A184442B9019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B278F9BD-C530-4074-BD04-A184442B9019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
