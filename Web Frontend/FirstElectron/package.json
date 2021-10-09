@@ -1,0 +1,15 @@
+{
+  "name": "firstelectron",
+  "version": "1.0.0",
+  "description": "\"这是一个electron demo\"",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^15.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon --watch index.js --exec electron ."
+  },
+  "author": "",
+  "license": "MIT"
+}
