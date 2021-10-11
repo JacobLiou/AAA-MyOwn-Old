@@ -17,7 +17,7 @@
         https://juejin.cn/post/7015476516196712462
 
         <script>
-             const {log} = console
+            const {log} = console
              
              // 导入 remote 中的  BrowserWindow
             const { BrowserWindow } = require('electron').remote
@@ -35,6 +35,18 @@
                 newWin = null
             })
 
+
+
+            //引入ipcRenderer
+            const electron = require('electron')
+            const { ipcRenderer } = require('electron')
+
+            console.log(ipcRenderer)
+            ipcRenderer.on('mainMsg', (event, task) => {
+                log(task)
+                document.getElementById('receive').innerText = task
+            })
+        }
 
         </script>
 

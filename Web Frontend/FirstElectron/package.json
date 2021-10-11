@@ -6,7 +6,9 @@
   "dependencies": {
     "electron": "^15.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@electron/remote": "^2.0.1"
+  },
   "scripts": {
     "test": "nodemon --watch index.js --exec electron ."
   },

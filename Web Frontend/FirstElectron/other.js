@@ -33,3 +33,13 @@ function writeFile() {
     }
   )
 }
+
+const { ipcRenderer } = require('electron')
+
+log(ipcRenderer)
+ipcRenderer.on('mainMsg', (event, task) => {
+  log(task)
+  document.getElementById('receive').innerText = task
+})
+
+//主进程index.js和渲染进程index.htmlde js之前的IPC机制

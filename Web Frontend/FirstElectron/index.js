@@ -19,6 +19,11 @@ function createWindow() {
 
     //打开开发者工具
     win.webContents.openDevTools()
+
+      // 发送给渲染线程
+    setTimeout(() => {
+    win.webContents.send('mainMsg', '我是主线程发送的消息')
+        }, 3000)
 }
 
 // This method will be called when Electron has finished

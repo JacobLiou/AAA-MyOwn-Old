@@ -12,13 +12,27 @@ from msedge.selenium_tools import Edge
 
 
 driver = Edge(executable_path="D:\Downloads\edgedriver_win64\msedgedriver.exe")
-driver.get("https://www.baidu.com/");
+driver.get("https://www.baidu.com/")
+
+driver.get('http://www.bing.com')
+# # click  button
+# python_button = driver.find_elements_by_xpath("//input[@name='lang' and @value='Python']")[0]
+# python_button.click()
+est_cn = driver.find_element_by_id("est_cn")
+est_cn.click()
+time.sleep(3)
+est_en = driver.find_element_by_id("est_en")
+est_en.click()
+time.sleep(3)
+#sel_tag=wait.until(EC.presence_of_element_located((By.ID,"est_cn")))
+
 # driver = webdriver.Chrome()
 
 try:
     wait=WebDriverWait(driver,10)
     #1、访问百度
     driver.get('https://www.baidu.com/')
+    driver.set_window_size(500, 500)
     #2、查找输入框
     #     input_tag = wait.until(
     #         # 调用EC的presence_of_element_located()
