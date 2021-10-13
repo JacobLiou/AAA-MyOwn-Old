@@ -24,6 +24,7 @@ time.sleep(3)
 est_en = driver.find_element_by_id("est_en")
 est_en.click()
 time.sleep(3)
+driver.back()#前进后退   按键精灵对比selenium自动化
 #sel_tag=wait.until(EC.presence_of_element_located((By.ID,"est_cn")))
 
 # driver = webdriver.Chrome()
@@ -33,6 +34,7 @@ try:
     #1、访问百度
     driver.get('https://www.baidu.com/')
     driver.set_window_size(500, 500)
+    driver.maximize_window()#最大化窗口
     #2、查找输入框
     #     input_tag = wait.until(
     #         # 调用EC的presence_of_element_located()
